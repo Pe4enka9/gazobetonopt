@@ -203,6 +203,12 @@ header {
 
     font-size: 1.8rem;
     font-weight: 700;
+
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header__main__info__text a:hover {
+    background-color: #51924f;
 }
 
 .header__main__about {
@@ -415,6 +421,42 @@ header {
 
 .hits__card-container__card {
     width: 21%;
+
+    position: relative;
+}
+
+.hits__card-container__card__image-container-favorite {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f7f7f7;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+}
+
+.hits__card-container__card__image-container-favorite:hover svg {
+    transform: scale(1.1);
+}
+
+.hits__card-container__card__image-container-favorite svg {
+    width: 95%;
+
+    transition: transform .3s ease;
+}
+
+.favorite__click {
+    fill: #ed5952;
 }
 
 .hits__card-container__card__info {
@@ -427,9 +469,11 @@ header {
 
 .hits__card-container__card__image-container {
     width: 100%;
+
+    position: relative;
 }
 
-.hits__card-container__card__image-container img {
+.hits__card-container__card__image-container > img {
     width: 100%;
 }
 
@@ -1037,7 +1081,7 @@ footer {
 
 .footer__content > a {
     color: #626576;
-    
+
     font-size: 1.6rem;
     font-weight: 600;
 }
