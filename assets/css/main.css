@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import "_variables.css";
 
 * {
     margin: 0;
@@ -15,9 +16,40 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    color: var(--title-color);
+
+    font-size: 5.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    color: var(--gray-color);
+
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+h3 {
+    color: #23242a;
+
+    font-size: 2.4rem;
+}
+
+h4 {
+    color: var(--gray-color);
+
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 h5 {
-    color: #232329;
+    color: var(--title-color);
     font-size: 4.6rem;
+}
+
+.m-b-12 {
+    margin-bottom: 12rem;
 }
 
 .container {
@@ -52,7 +84,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    color: #60626c;
+    color: var(--gray-color);
 }
 
 .header-info__content,
@@ -181,20 +213,6 @@ header {
     gap: 2rem;
 }
 
-.header__main__info__text h1 {
-    color: #232329;
-
-    font-size: 5.5rem;
-    line-height: 1.2;
-}
-
-.header__main__info__text h2 {
-    color: #60626c;
-
-    font-size: 2.2rem;
-    font-weight: 500;
-}
-
 .header__main__info__text a {
     width: fit-content;
 
@@ -236,34 +254,6 @@ header {
     width: 25px;
 }
 
-.header__main__about__block h3 {
-    color: #23242a;
-
-    font-size: 2.4rem;
-}
-
-.header__main__about__block h4 {
-    color: #60626c;
-
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.main__catalog,
-.main__promotion,
-.main__hits,
-.main__consultation,
-.main__price,
-.main__gallery,
-.main__why-us,
-.main__order,
-.main__answers-to-questions,
-.main__contact {
-    margin-bottom: 12rem;
-}
-
-/*m-b-12*/
-
 .main__catalog__title,
 .main__promotion__title {
     margin-bottom: 3rem;
@@ -297,12 +287,9 @@ header {
 }
 
 .main__catalog__card-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-container__card {
-    width: 23%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+    grid-gap: 3rem;
 }
 
 .card-container__card a {
@@ -341,12 +328,12 @@ header {
 }
 
 .main__promotion__card-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
+    grid-gap: 4rem;
 }
 
 .promotion__card-container__card {
-    width: 31%;
     height: 380px;
 
     -webkit-border-radius: 10px;
@@ -382,7 +369,7 @@ header {
 }
 
 .promotion__card-container__card p {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.7rem;
     line-height: 1.2;
@@ -393,7 +380,7 @@ header {
 
     margin: 30px auto 0 auto;
 
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.7rem;
     font-weight: 600;
@@ -408,13 +395,12 @@ header {
 }
 
 .main__hits__card-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21%, 1fr));
+    grid-gap: 2rem;
 }
 
 .hits__card-container__card {
-    width: 21%;
-
     position: relative;
 }
 
@@ -480,7 +466,7 @@ header {
 }
 
 .hits__card-container__card__info ul li {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.6rem;
     font-weight: 300;
@@ -605,7 +591,7 @@ header {
 }
 
 .consultation__text p {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.9rem;
     font-weight: 500;
@@ -672,7 +658,7 @@ header {
 }
 
 .consultation__image-container__employee div {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.4rem;
     font-weight: 500;
@@ -685,7 +671,7 @@ header {
 .main__price div {
     margin-bottom: 3rem;
 
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 2rem;
 }
@@ -775,7 +761,7 @@ td {
 }
 
 .why-us__container__advantage p {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.6rem;
 }
@@ -832,7 +818,7 @@ td {
 .order__steps__step p {
     width: 85%;
 
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.6rem;
 
@@ -840,15 +826,12 @@ td {
 }
 
 .answers-to-questions__questions {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-gap: 2.5rem;
 }
 
 .answers-to-questions__questions__question {
-    width: 48%;
-
     padding: 2.5rem 2.8rem;
 
     background-color: #f6f6f6;
@@ -918,7 +901,7 @@ td {
 
     margin: auto auto 2rem;
 
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 2rem;
 
@@ -1056,7 +1039,7 @@ footer {
 
 .footer__content__info div:first-child a,
 .footer__content__info div:first-child div {
-    color: #232329;
+    color: var(--title-color);
 
     font-size: 2rem;
 }
@@ -1085,7 +1068,7 @@ footer {
 }
 
 .extra-info__politics div {
-    color: #60626c;
+    color: var(--gray-color);
 
     font-size: 1.6rem;
 }
