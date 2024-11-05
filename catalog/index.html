@@ -76,24 +76,412 @@
         </section>
 
         <div class="main__sort">
-            <input type="search" name="search" placeholder="Поиск">
+            <div class="main__sort__input">
+                <input type="search" name="search" placeholder="Поиск">
 
-            <select name="filter">
-                <option value="">Порядок: по умолчанию</option>
-                <option value="">Цена: по возрастанию</option>
-                <option value="">Цена: по убыванию</option>
-                <option value="">Название: А-Я</option>
-                <option value="">Название: Я-А</option>
-                <option value="">Порядок: сперва новые</option>
-                <option value="">Порядок: сперва старые</option>
-            </select>
+                <div class="main__sort__input__search-icon">
+                    <svg class="t-store__search-icon js-store-filter-search-btn" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 88 88">
+                        <path fill="#757575"
+                              d="M85 31.1c-.5-8.7-4.4-16.6-10.9-22.3C67.6 3 59.3 0 50.6.6c-8.7.5-16.7 4.4-22.5 11-11.2 12.7-10.7 31.7.6 43.9l-5.3 6.1-2.5-2.2-17.8 20 9 8.1 17.8-20.2-2.1-1.8 5.3-6.1c5.8 4.2 12.6 6.3 19.3 6.3 9 0 18-3.7 24.4-10.9 5.9-6.6 8.8-15 8.2-23.7zM72.4 50.8c-9.7 10.9-26.5 11.9-37.6 2.3-10.9-9.8-11.9-26.6-2.3-37.6 4.7-5.4 11.3-8.5 18.4-8.9h1.6c6.5 0 12.7 2.4 17.6 6.8 5.3 4.7 8.5 11.1 8.9 18.2.5 7-1.9 13.8-6.6 19.2z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="main__sort__select">
+                <select name="filter">
+                    <option value="">Порядок: по умолчанию</option>
+                    <option value="">Цена: по возрастанию</option>
+                    <option value="">Цена: по убыванию</option>
+                    <option value="">Название: А-Я</option>
+                    <option value="">Название: Я-А</option>
+                    <option value="">Порядок: сперва новые</option>
+                    <option value="">Порядок: сперва старые</option>
+                </select>
+            </div>
         </div>
 
-        <section class="main__catalog">
-            <div class="main__catalog__card">
+        <div class="main__filters-and-catalog">
+            <aside class="main__filters">
+                <a href="#">Все</a>
+                <a href="#">Ширина 250 мм</a>
+                <a href="#">Ширина 200 мм</a>
+                <a href="#">Ширина 300 мм</a>
+                <a href="#">Ширина 375 мм</a>
+                <a href="#">Ширина 400 мм</a>
+                <a href="#">Ширина 750 мм</a>
+                <a href="#">D200</a>
+                <a href="#">D300</a>
+                <a href="#">D400</a>
+                <a href="#">D500</a>
+                <a href="#">D600</a>
+                <a href="#">Прямой блок с захватом</a>
+                <a href="#">Пазогребневый блок с захватом</a>
+                <a href="#">Прямой блок</a>
+                <a href="#">u-блоки</a>
+                <a href="#">Перемычки</a>
+                <a href="#">Беларусь</a>
+                <a href="#">Россия</a>
+                <a href="#">100х250х625</a>
+                <a href="#">150х250х625</a>
+                <a href="#">200х250х625</a>
+                <a href="#">250х250х625</a>
+                <a href="#">300х250х625</a>
+                <a href="#">375х250х625</a>
+                <a href="#">400х250х600</a>
+                <a href="#">200х200х600</a>
+                <a href="#">300х200х600</a>
+                <a href="#">400х200х600</a>
+                <a href="#">500х200х600</a>
+                <a href="#">500х250х600</a>
+                <a href="#">400х250х500</a>
+                <a href="#">300х250х500</a>
+                <a href="#">375х250х500</a>
+                <a href="#">250х250х500</a>
+                <a href="#">200х250х500</a>
+                <a href="#">50х250х600</a>
+                <a href="#">75х250х600</a>
+                <a href="#">85x250x625</a>
+                <a href="#">75х750х625</a>
+                <a href="#">75х250х625</a>
+                <a href="#">500х250х375</a>
+                <a href="#">500х250х200</a>
+                <a href="#">500х250х300</a>
+                <a href="#">500х250х250</a>
+                <a href="#">500х250х400</a>
+                <a href="#">B1,0</a>
+                <a href="#">В1,5</a>
+                <a href="#">В2,0</a>
+                <a href="#">В2,5</a>
+                <a href="#">В3,0</a>
+                <a href="#">В3,5</a>
+                <a href="#">В5,0</a>
 
-            </div>
-        </section>
+                <h3>Бренд</h3>
+                <div class="main__filters__brands">
+                    <a href="#">Aeroc</a>
+                    <a href="#">Bonolit</a>
+                    <a href="#">SLS</a>
+                    <a href="#">Ytong</a>
+                    <a href="#">Газобетон Белорусский (БЦК)</a>
+                    <a href="#">Газобетон Забудова</a>
+                    <a href="#">ЕАБ (ЕвроАэроБетон)</a>
+                    <a href="#">ЛСР</a>
+                    <a href="#">Могилевский КСИ</a>
+                    <a href="#">Н+Н</a>
+                    <a href="#">СК (СтройКомплект)</a>
+                </div>
+                <a href="#">Показать все</a>
+            </aside>
+            <section class="main__catalog">
+                <div class="main__catalog__card-container">
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="catalog__card-container__card">
+                        <a href="#" class="catalog__card-container__card__info">
+                            <div class="catalog__card-container__card__image-container">
+                                <img src="../assets/images/hits1.jpg"
+                                     alt="Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок">
+                            </div>
+                            <h6>Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок</h6>
+
+                            <ul>
+                                <li><strong>Количество шт/м3</strong>: 64</li>
+                                <li><strong>Кол-во в поддоне</strong>: 90 шт</li>
+                                <li><strong>Размеры</strong>: 100х250х625 мм</li>
+                                <li><strong>Марка</strong>: D400</li>
+                            </ul>
+
+                            <div>6 800р. <span>/ 1 м³</span></div>
+                        </a>
+
+                        <div class="catalog__card-container__card__purchase">
+                            <a href="#">Подробнее</a>
+
+                            <div class="catalog__card-container__card__purchase_in-cart">
+                                <div>
+                                    <div>-</div>
+                                    <div class="counter">1</div>
+                                    <div>+</div>
+                                </div>
+                                <a href="#">В корзину</a>
+                            </div>
+                        </div>
+
+                        <div class="catalog__card-container__card__image-container-favorite">
+                            <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6.32647C20 11.4974 10.5 17 10.5 17C10.5 17 1 11.4974 1 6.32647C1 -0.694364 10.5 -0.599555 10.5 5.57947C10.5 -0.599555 20 -0.507124 20 6.32647Z"
+                                      stroke="black" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 </div>
 

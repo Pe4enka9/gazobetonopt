@@ -15,9 +15,13 @@ a {
     text-decoration: none;
 }
 
+h5 {
+    color: #232329;
+    font-size: 4.6rem;
+}
+
 .container {
     width: 62%;
-
     margin: auto;
 }
 
@@ -258,6 +262,8 @@ header {
     margin-bottom: 12rem;
 }
 
+/*m-b-12*/
+
 .main__catalog__title,
 .main__promotion__title {
     margin-bottom: 3rem;
@@ -288,21 +294,6 @@ header {
 .main__catalog__title a > img,
 .main__promotion__title a > img {
     width: 15px;
-}
-
-.main__catalog__title h5,
-.main__promotion__title h5,
-.main__hits h5,
-.consultation__text h5,
-.main__price h5,
-.main__gallery h5,
-.main__why-us h5,
-.main__order h5,
-.main__answers-to-questions h5,
-.main__contact h5 {
-    color: #232329;
-
-    font-size: 4.6rem;
 }
 
 .main__catalog__card-container {
