@@ -9,3 +9,25 @@ favorite.addEventListener('click', () => {
     }
 });
 
+const count = document.querySelector('.counter');
+count.nextElementSibling.addEventListener('click', () => {
+    let currentValue = parseInt(count.textContent);
+    currentValue++;
+
+    if (currentValue <= 1) {
+        currentValue = 1;
+    }
+
+    count.textContent = currentValue.toString();
+});
+
+count.previousElementSibling.addEventListener('click', () => {
+    let currentValue = parseInt(count.textContent);
+    currentValue--;
+
+    if (currentValue <= 1) {
+        currentValue = 1;
+    }
+
+    count.textContent = currentValue.toString();
+});
