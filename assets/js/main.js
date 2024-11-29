@@ -31,3 +31,43 @@ count.previousElementSibling.addEventListener('click', () => {
 
     count.textContent = currentValue.toString();
 });
+
+
+const sliderImages = [
+    {
+        src: 'https://preview.redd.it/1wizu260amk71.png?auto=webp&s=1873cb5c3ec8d6c9d530a9382e33d2124cd7b32e',
+        alt: 'placeholder'
+    },
+    {
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6uY6qHgziWE7WDGiGgLUedFJwOcEZUWVYw&s',
+        alt: 'placeholder'
+    },
+    {
+        src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMafxbX3jO_Pd24pu1FSuFxe91osLoEkw3cg&s',
+        alt: 'placeholder'
+    }
+];
+
+const sliderContainer = document.querySelector('.main__slider-container');
+
+function next() {
+   let indexImages = sliderContainer.dataset.index;
+   const elem = document.querySelectorAll('.elem-container__elem');
+
+   if (+indexImages < sliderImages.length) {
+       sliderContainer.dataset.index = ++indexImages;
+       sliderContainer.style.backgroundImage = `url(${sliderImages[+indexImages - 1].src})`;
+
+       elem[indexImages - 1].style.backgroundColor = '#fff';
+       elem[indexImages - 2].style.backgroundColor = '#ccc';
+   } else {
+       sliderContainer.dataset.index = 1;
+       sliderContainer.style.backgroundImage = `url(${sliderImages[0].src})`;
+   }
+}
+
+function autoSlider() {
+    setInterval(next, 3000);
+}
+
+autoSlider();

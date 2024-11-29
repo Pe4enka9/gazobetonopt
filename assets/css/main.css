@@ -1090,3 +1090,41 @@ footer {
     font-size: 1.6rem;
     font-weight: 600;
 }
+
+.main__slider-container {
+    height: 720px;
+
+    background: url("https://preview.redd.it/1wizu260amk71.png?auto=webp&s=1873cb5c3ec8d6c9d530a9382e33d2124cd7b32e") no-repeat center / cover;
+
+    transition: .5s;
+
+    position: relative;
+}
+
+.slider-container__elem-container {
+    height: 5px;
+
+    display: flex;
+    gap: 5px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+
+    transform: translateX(-50%);
+}
+
+.elem-container__elem {
+    width: 30px;
+    height: 5px;
+
+    background-color: #ccc;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.elem-container__elem:first-child {
+    background-color: #fff;
+}
