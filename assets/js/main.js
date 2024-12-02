@@ -49,21 +49,35 @@ const sliderImages = [
 ];
 
 const sliderContainer = document.querySelector('.main__slider-container');
+const elems = document.querySelectorAll('.elem-container__elem');
+
+function goToSlide(index) {
+    sliderContainer.dataset.index = index;
+
+    sliderContainer.style.backgroundImage = `url(${sliderImages[index - 1].src})`;
+
+    elems.forEach((elem, idx) => {
+        elem.style.backgroundColor = idx + 1 === index ? '#fff' : '#ccc';
+    });
+}
+
+elems.forEach(elem => {
+    elem.addEventListener('click', () => {
+        const slideIndex = +elem.dataset.slide;
+        goToSlide(slideIndex);
+    });
+});
 
 function next() {
-   let indexImages = sliderContainer.dataset.index;
-   const elem = document.querySelectorAll('.elem-container__elem');
+    let indexImages = sliderContainer.dataset.index;
 
-   if (+indexImages < sliderImages.length) {
-       sliderContainer.dataset.index = ++indexImages;
-       sliderContainer.style.backgroundImage = `url(${sliderImages[+indexImages - 1].src})`;
+    if (+indexImages < sliderImages.length) {
+        indexImages++;
+    } else {
+        indexImages = 1;
+    }
 
-       elem[indexImages - 1].style.backgroundColor = '#fff';
-       elem[indexImages - 2].style.backgroundColor = '#ccc';
-   } else {
-       sliderContainer.dataset.index = 1;
-       sliderContainer.style.backgroundImage = `url(${sliderImages[0].src})`;
-   }
+    goToSlide(indexImages);
 }
 
 function autoSlider() {
