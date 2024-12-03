@@ -32,7 +32,6 @@ count.previousElementSibling.addEventListener('click', () => {
     count.textContent = currentValue.toString();
 });
 
-
 const sliderImages = [
     {
         src: 'https://preview.redd.it/1wizu260amk71.png?auto=webp&s=1873cb5c3ec8d6c9d530a9382e33d2124cd7b32e',
