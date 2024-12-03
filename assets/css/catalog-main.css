@@ -304,7 +304,13 @@ h1 {
     left: 0;
 }
 
-.main__filters__categories > a {
+.main__filters__categories > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main__filters__categories > div > label {
     margin-bottom: .5em;
 
     display: block;
@@ -313,9 +319,11 @@ h1 {
 
     font-size: 1.8rem;
     font-weight: 600;
+
+    cursor: pointer;
 }
 
-.main__filters__categories > a:last-child {
+.main__filters__categories > div > label:last-child {
     margin-bottom: 0;
 }
 

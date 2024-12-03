@@ -17,6 +17,14 @@ const categories = [
     },
 ];
 
+categories.forEach(function (category, id) {
+    $('.main__filters__categories').append(`
+                        <div>
+                        <input type="checkbox" id="${++id}">
+                        <label for="${id}">Ширина 250 мм</label>
+                    </div>`);
+});
+
 const catalog = [
     {
         name: 'Газобетон СК (СтройКомплект) D400 100х250х625 мм прямой блок',
@@ -60,7 +68,7 @@ const catalog = [
     }
 ];
 
-catalog.forEach(function (product, id) {
+catalog.forEach(function (product) {
     $('.main__catalog__card-container').append(`
                         <div class="catalog__card-container__card" data-category="${product.category}">
                         <a href="#" class="catalog__card-container__card__info">
@@ -102,3 +110,33 @@ catalog.forEach(function (product, id) {
                         </div>
                     </div>`);
 });
+
+function searchCategory() {
+    const categories = document.querySelectorAll('.main__filters__categories > div > input');
+
+    let selectedCategories = [];
+
+    categories.forEach(function (category) {
+        if (category.checked) {
+            selectedCategories.push(category.id);
+        }
+    });
+
+    const products = document.querySelector('.main__catalog__card-container')
+        .querySelectorAll('.catalog__card-container__card');
+
+    products.forEach(function (product) {
+        product.style.display = 'none';
+
+        selectedCategories.forEach(function (categoryId) {
+            if (categoryId === 'all') {
+                product.style.display = '';
+                return;
+            }
+
+            if (product.dataset.category === categoryId) {
+                product.style.display = '';
+            }
+        });
+    });
+}

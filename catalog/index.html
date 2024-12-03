@@ -77,7 +77,7 @@
 
         <div class="main__sort">
             <div class="main__sort__input">
-                <input type="search" name="search" placeholder="Поиск">
+                <input type="search" name="search" id="search" placeholder="Поиск">
 
                 <div class="main__sort__input__search-icon">
                     <svg class="t-store__search-icon js-store-filter-search-btn" xmlns="http://www.w3.org/2000/svg"
@@ -103,50 +103,223 @@
 
         <div class="main__filters-and-catalog">
             <aside class="main__filters">
+                <button onclick="searchCategory()">Поиск</button>
                 <div class="main__filters__categories">
-                    <a href="#">Все</a>
-                    <a href="#">Ширина 250 мм</a>
-                    <a href="#">Ширина 200 мм</a>
-                    <a href="#">Ширина 300 мм</a>
-                    <a href="#">Ширина 375 мм</a>
-                    <a href="#">Ширина 400 мм</a>
-                    <a href="#">Ширина 750 мм</a>
-                    <a href="#">D200</a>
-                    <a href="#">D300</a>
-                    <a href="#">D400</a>
-                    <a href="#">D500</a>
-                    <a href="#">D600</a>
-                    <a href="#">Прямой блок с захватом</a>
-                    <a href="#">Пазогребневый блок с захватом</a>
-                    <a href="#">Прямой блок</a>
-                    <a href="#">u-блоки</a>
-                    <a href="#">Перемычки</a>
-                    <a href="#">Беларусь</a>
-                    <a href="#">Россия</a>
-                    <a href="#">100х250х625</a>
-                    <a href="#">150х250х625</a>
-                    <a href="#">200х250х625</a>
-                    <a href="#">250х250х625</a>
-                    <a href="#">300х250х625</a>
-                    <a href="#">375х250х625</a>
-                    <a href="#">400х250х600</a>
-                    <a href="#">200х200х600</a>
-                    <a href="#">300х200х600</a>
-                    <a href="#">400х200х600</a>
-                    <a href="#">500х200х600</a>
-                    <a href="#">500х250х600</a>
-                    <a href="#">400х250х500</a>
-                    <a href="#">300х250х500</a>
-                    <a href="#">375х250х500</a>
-                    <a href="#">250х250х500</a>
-                    <a href="#">200х250х500</a>
-                    <a href="#">50х250х600</a>
-                    <a href="#">75х250х600</a>
-                    <a href="#">85x250x625</a>
-                    <a href="#">75х750х625</a>
-                    <a href="#">75х250х625</a>
-                    <a href="#">500х250х375</a>
-                    <a href="#">500х250х200</a>
+                    <div>
+                        <input type="checkbox" name="all" id="all">
+                        <label for="all">Все</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="width250" id="1">
+                        <label for="1">Ширина 250 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="2">
+                        <label for="2">Ширина 200 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="3">
+                        <label for="3">Ширина 300 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="4">
+                        <label for="4">Ширина 375 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="5">
+                        <label for="5">Ширина 400 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="6">
+                        <label for="6">Ширина 750 мм</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="8">
+                        <label for="8">D200</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="9">
+                        <label for="9">D300</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="10">
+                        <label for="10">D400</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="11">
+                        <label for="11">D500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">D600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Прямой блок с захватом</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Пазогребневый блок с захватом</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Прямой блок</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">u-блоки</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Перемычки</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Беларусь</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">Россия</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">100х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">150х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">200х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">250х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">300х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">375х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">400х250х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">200х200х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">300х200х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">400х200х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">500х200х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">500х250х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">400х250х500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">300х250х500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">375х250х500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">250х250х500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">200х250х500</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">50х250х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">75х250х600</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">85x250x625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">75х750х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">75х250х625</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">500х250х375</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="12">
+                        <label for="12">500х250х200</label>
+                    </div>
+
                     <a href="#">500х250х300</a>
                     <a href="#">500х250х250</a>
                     <a href="#">500х250х400</a>
